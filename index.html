@@ -10,35 +10,43 @@
     <meta property="og:description" content="瀧口 美月の作品紹介ページです" />
     <meta property="og:type" content="website">
     <!-- <meta property="og:url" content=""> -->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/Logo/LogoForMyPortfolio-02.png">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Reset css -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <h1>
-            <a href="index.html">
+            <a href="#">
                 <img class="logo" src="images/Logo/LogoForMyPortfolio-02.png" alt="m-logo">
             </a>
         </h1>
         <nav>
             <ul class="main-nav">
                 <li class="header_item">
-                    <a href="">ABOUT</a>
+                    <a href="#about">ABOUT</a>
                 </li>
                 <li class="header_item">
-                     <a href="">WORKS</a>
+                     <a href="#works">WORKS</a>
                 </li>
                 <li class="header_item">
-                    <a href="">CONTACT</a>
+                    <a href="#contact">CONTACT</a>
                 </li>
             </ul>
         </nav>
     </header>
     <div class="inner">
-        <section class="KV-container">
+        <section class="section-container flex">
             <img class="KV-mainVisual" src="images/KV/Portfolio_KV.png" alt="KV-mainVisual">
             <img class="KV-moji" src="images/KV/Portfolio_KV-moji.png" alt="KV-moji">
         </section>
@@ -47,7 +55,7 @@
             <h3 class="scroll">scroll</h3>
             <div class="border2"></div>
         </section>
-        <section class="section-container">
+        <section id="about" class="section-container">
             <h2 class="contents-title">ABOUT</h2>
             <div class="aboutContents">
                 <article class="aboutArticle">2014年に4年制大学を卒業後、4年間専門商社に勤務。
@@ -59,16 +67,16 @@
                 <img class="aboutPic" src="images/ABOUT/AboutPic_Hexagon ver.2.png">
             </div>
         </section>
-        <section class="section-container">
+        <section id="works" class="section-container">
             <h2 class="contents-title">WORKS</h2>
             <div class="flex center flex-around">
                 <div class="flex flex-center flex-c">
-                    <img class="works-title" src="images/WORKS/WorksTitle_01.png">
-                    <img class="worksPic" src="images/ABOUT/AboutPic_Hexagon.png">
+                    <p class="works-title colour-alt-2">Graphic Design</p>
+                    <a href="/graphic-design.html"><img class="worksPic" src="images/ABOUT/AboutPic_Hexagon.png"></a>
                 </div>
                 <div class="flex flex-center flex-c">
-                    <img class="works-title" src="images/WORKS/WorksTitle-02.png">
-                    <img class="worksPic" src="images/ABOUT/AboutPic_Hexagon.png">
+                    <p class="works-title colour-alt-1">Illustrations</p>
+                    <a href="/illustration.html"><img class="worksPic" src="images/ABOUT/AboutPic_Hexagon.png"></a>
                 </div>
             </div>
             

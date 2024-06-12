@@ -9,6 +9,7 @@
 
 html {
     font-size: 100%;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -26,6 +27,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
 }
 
 .logo {
@@ -58,8 +63,15 @@ header {
 }
 
 .section-container {
-    margin: 500px 0;
+    padding-top: 80px;
+    margin-bottom: 500px;
+
 }
+
+/* .section-container:not(:last-child) {
+    margin-bottom: 500px;
+} */
+
 /* body common parts end*/
 
 .KV-container {
@@ -111,7 +123,21 @@ header {
 }
 
 .works-title {
-    max-height: 70px
+    max-height: 70px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+}
+
+.colour-alt-1 {
+    color: #697FBD;
+}
+
+.colour-alt-2 {
+    color: #16ca4e;
+
 }
 
 /* UNIVERSAL */
