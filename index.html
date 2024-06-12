@@ -47,7 +47,7 @@
         </nav>
     </header>
     <div class="inner">
-        <section class="section-container flex">
+        <section class="section-container flex flex-around">
             <img class="KV-mainVisual" src="images/KV/Portfolio_KV.png" alt="KV-mainVisual">
             <p class="KV-introduction">Hi, there<br>I'm Mizuki Takiguchi<br>Growing Graphic / Web Designer</p>
         </section>
@@ -70,16 +70,24 @@
         </section>
         <section id="works" class="section-container">
             <h2 class="contents-title">WORKS</h2>
-            <div class="flex center flex-around gap">
+            <div class="works-container">
                 <div class="flex flex-center flex-c">
                     <p class="works-title colour-alt-1">Graphic Design</p>
-                    <a href="/graphic-design.html"><img class="worksPic" src="images/WORKS/WORKS_icons_Graphic Design.png"></a>
-                    <a href="/graphic-design.html"><img class="worksPic" src="images/WORKS/WORKS_icons_Graphic Design Shade.png"></a>
+                    <a class="fade" href="/graphic-design.html">
+                        <div class="works-image-container">
+                            <img class="worksPic" src="images/WORKS/WORKS_icons_Graphic Design.png">
+                            <img class="workPic-back" src="images/WORKS/WORKS_icons_Graphic Design Shade.png">
+                        </div>
+                    </a>
                 </div>
                 <div class="flex flex-center flex-c">
                     <p class="works-title colour-alt-2">Illustrations</p>
-                    <a href="/illustration.html"><img class="worksPic" src="images/WORKS/WORKS_icons_Illustration.png"></a>
-                    <a href="/illustration.html"><img class="worksPic" src="images/WORKS/WORKS_icons_Illustration shade.png"></a>
+                    <a class="fade" href="/illustration.html">
+                        <div class="works-image-container">
+                            <img class="worksPic" src="images/WORKS/WORKS_icons_Illustration.png">
+                            <img class="workPic-back" src="images/WORKS/WORKS_icons_Illustration shade.png">
+                        </div>
+                    </a>
                 </div>
             </div>
             
@@ -218,7 +226,6 @@
         </section>
     </main> -->
     <footer>
-        <p class="company_name">Y's inc</p>
     </footer>
 </body>
 
