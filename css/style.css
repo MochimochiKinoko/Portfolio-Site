@@ -42,6 +42,7 @@ header {
     text-transform: uppercase;
     margin-right: 40px;
 }
+
 /* body common parts */
 .inner {
     max-width: 100%;
@@ -99,13 +100,9 @@ header {
     justify-content: center;
 }
 
-.center {
-    margin: auto;
-}
-
 .aboutPic {
-    height: 300px;
-    max-width: 450px;
+    height: 400px;
+    max-width: 50%;
     object-fit: contain;
 }
 
@@ -113,7 +110,31 @@ header {
     max-width: 50%;
 }
 
+.works-title {
+    max-height: 70px
+}
 
+/* UNIVERSAL */
+
+.flex {
+    display: flex;
+}
+
+.flex-c {
+    flex-direction: column;
+}
+
+.flex-around {
+    justify-content: space-around;
+}
+
+.flex-center {
+    justify-content: center
+}
+
+.center {
+    margin: auto;
+}
 
 /* バナーの文字を画像と一緒に拡大縮小する方法について
 .banner_text {
