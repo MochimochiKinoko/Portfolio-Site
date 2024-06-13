@@ -37,22 +37,24 @@
         <nav>
             <ul class="main-nav">
                 <li class="header_item">
-                    <a href="#about">ABOUT</a>
+                    <a onclick="scrolltoSection('about')">ABOUT</a>
                 </li>
                 <li class="header_item">
-                     <a href="#works">WORKS</a>
+                     <a onclick="scrolltoSection('works')">WORKS</a>
                 </li>
                 <li class="header_item">
-                    <a href="#contact">CONTACT</a>
+                    <a onclick="scrolltoSection('contact')">CONTACT</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <!-- BANNER -->
-    <section class="section-container flex flex-around">
-        <img class="KV-mainVisual" src="images/KV/Portfolio_KV.png" alt="KV-mainVisual">
-        <p class="KV-introduction">Hi, there<br>I'm Mizuki Takiguchi<br>Growing Graphic / Web Designer</p>
+    <section class="section-container">
+        <div class="banner-container">
+            <img class="KV-mainVisual" src="images/KV/Portfolio_KV.png" alt="KV-mainVisual">
+            <p class="KV-introduction">Hi, there<br>I'm Mizuki Takiguchi<br>Growing Graphic / Web Designer</p>
+        </div>
     </section>
 
     <!-- ABOUT -->
@@ -127,3 +129,13 @@
 </body>
 
 </html>
+
+<script>
+    function scrolltoSection(id) {
+        var target = document.getElementById(id);
+        target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }
+</script>

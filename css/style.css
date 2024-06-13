@@ -8,13 +8,16 @@
 }
 
 html {
+    overflow-y: scroll;
     font-size: 100%;
+    scroll-snap-type: y proximity;
     scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none;
     color: #000;
+    cursor: pointer;
 }
 
 li {
@@ -67,23 +70,36 @@ h2 {
 }
 
 .section-container {
+    min-height: 100vh;
     padding-top: 80px;
     justify-content: space-between;
+    scroll-snap-align: start;
 }
 
-.section-container:first-of-type {
-    margin-top: 80px;
-}
-
-.section-container:not(:last-child) {
-    margin-bottom: 500px;
+.section-container:last-of-type {
+    margin-bottom: 0;
 }
 
 /* body common parts end*/
 
-.KV-mainVisual,
-.KV-introduction {
-    max-width: 50%;
+
+/* KEY VISUAL - BANNER */
+
+.banner-container {
+    padding-top: 80px;
+    max-width: 1600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center
+}
+
+.banner-container > * {
+    width: 50%;
 }
 
 .KV-introduction {
@@ -92,25 +108,11 @@ h2 {
     font-style: normal;
     font-size: 50px;
     align-content: center;
+    text-align: left;
+    padding-left: 80px;
 }
 
-.border1,
-.border2 {
-    /* position: absolute; */
-    margin: auto;
-    left: 80px;
-    top: 20%;
-    background: #000;
-    width: 1px;
-    height: 15px;
-}
-
-.scroll {
-    /* margin: 30px; */
-    text-align: center;
-    font-weight: 100;
-    font-size: 1rem;
-}
+/* ABOUT */
 
 .aboutContents {
     display: flex;
@@ -127,6 +129,8 @@ h2 {
 .aboutArticle {
     max-width: 50%;
 }
+
+/* WORKS */
 
 .works-title {
     font-family: "Square Peg", cursive;
@@ -165,7 +169,12 @@ h2 {
 }
 
 .worksPic {
-    width: 500px;
+    width: 450px;
+    transition: all 0.4s ease-in-out;
+}
+
+.worksPic:hover {
+    transform: scale(1.1);
 }
 
 .workPic-back {
@@ -176,6 +185,12 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all 0.4s ease-in-out;
+}
+
+.worksPic:hover ~ .workPic-back {
+    width: 95%;
+    height: 95%;
 }
 
 .colour-alt-1 {
@@ -198,19 +213,18 @@ h2 {
     gap: 20px;
 }
 
-.contact-form {
-    
-}
-
 .contact-form > * {
     margin-bottom: 30px;
+}
+
+.contact-form input {
+    width: 500px;
 }
 
 .contact-input-field {
     display: flex;
     flex-direction: column;
 }
-
 
 label {
     font-family:  "Square Peg", cursive;
@@ -224,14 +238,12 @@ label {
 }
 
 .comment-input {
-    width: 500px;
     height: 150px;
     padding: 10px;
     resize: none;
 }
 
 .contact-form input {
-    width: 500px;
     height: 50px;
     padding-left: 10px;
 }
@@ -304,6 +316,14 @@ label {
         flex-direction: column;
         max-height: none;
         align-items: center;
+    }
+
+    .banner-container {
+        flex-direction: column;
+    }
+    
+    .banner-container > * {
+        width: 100%;
     }
 }
 
