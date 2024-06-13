@@ -33,15 +33,15 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    top: 0;
     width: 100%;
     height: 80px;
     background-color: #fff;
     z-index: 1000;
 }
 
-.logo {
-    margin-left: 30px;
-    max-width: 25px;
+.logo > img {
+    width: 30px;
 }
 
 .main-nav {
@@ -55,15 +55,10 @@ header {
 }
 
 /* body common parts */
-.inner {
-    max-width: 100%;
-    margin: 0, auto;
-    padding: 70px;
-}
 
-.contents-title {
+h2 {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 50px;
     text-align: center;
     margin-bottom: 50px;
@@ -73,14 +68,16 @@ header {
 
 .section-container {
     padding-top: 80px;
-    margin-bottom: 500px;
     justify-content: space-between;
-
 }
 
-/* .section-container:not(:last-child) {
+.section-container:first-of-type {
+    margin-top: 80px;
+}
+
+.section-container:not(:last-child) {
     margin-bottom: 500px;
-} */
+}
 
 /* body common parts end*/
 
@@ -149,7 +146,6 @@ header {
 @media screen and (max-width: 1400px) {
     .works-container {
         max-width: 600px;
-        max-height: 600px;
         flex-direction: column;
         align-items: center;
         margin: auto;
@@ -191,14 +187,30 @@ header {
 
 }
 
+/* CONTACT PAGE */
+
 .contact-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    max-height: 600px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
 }
 
-/* .contactContents {
-    max-width: 45%;
-} */
+.contact-form {
+    
+}
+
+.contact-form > * {
+    margin-bottom: 30px;
+}
+
+.contact-input-field {
+    display: flex;
+    flex-direction: column;
+}
+
 
 label {
     font-family:  "Square Peg", cursive;
@@ -208,69 +220,48 @@ label {
 .comment-font {
     font-family: "Noto Serif JP", serif;
     font-size: 20px;
-}
-
-.inquiry-input {
-    height: 300px;
+    line-height: 46px;
 }
 
 .comment-input {
     width: 500px;
     height: 150px;
+    padding: 10px;
+    resize: none;
 }
 
-input {
+.contact-form input {
     width: 500px;
     height: 50px;
+    padding-left: 10px;
 }
 
-.form {
-    margin-bottom: 50px;
-}
-
-.section-button {
-    /* align-items: center; */
-    justify-content: center;
-    text-align: center;
-}
-
-.shadow_btn01 {
+.contact-photo-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 150px; /* ボタン幅 */
-    height: 3.5em; /* ボタン高さ */
-    background: #fff; /* 背景色 */
-    position: relative;
-  }
-  
-  .shadow_btn01 span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 3.5em;
-    background: black; /* 背景色 */
-    color: white; /* 文字色 */
-    font-family: "Noto Serif JP", serif;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    box-shadow: 0px 5px 12px #cad4e2, -6px -6px 12px #fff;
-    border-radius: 10px;
-    position: absolute;
-    top: -5px;
-    left: 0;
-    transition-duration: 0.2s;
-  }
-  
-  /* マウスオーバーした際のデザイン */
-  .shadow_btn01:hover span {
-    left: 0;
-    top: 0;
-    box-shadow: 0 0 6px #CAD4E2, -2px -2px 4px #FFF;
-  }
+}
 
+.contact-photo {
+    width: 400px;
+    object-fit: contain;
+}
+
+.contact-submit-btn {
+    display: block;
+    padding: 14px 28px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px #999;
+}
+
+.contact-submit-btn:hover {
+    transform: translate(0, 3px);
+    transition: all 0.3s;
+    box-shadow: 0 1px #999;
+}
 
 /* UNIVERSAL */
 
@@ -300,19 +291,7 @@ input {
 }
 
 .center {
-    margin: auto;
-}
-
-.gap-s {
-    gap: 10px;
-}
-
-.gap {
-    gap: 25px;
-}
-
-.gap-l {
-    gap: 80px;
+    margin: 0 auto;
 }
 
 /* transition-point between device style */
@@ -321,6 +300,10 @@ input {
 }
 
 @media screen and (max-width: 1000px) {
-
+    .contact-container {
+        flex-direction: column;
+        max-height: none;
+        align-items: center;
+    }
 }
 

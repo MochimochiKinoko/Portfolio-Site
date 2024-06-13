@@ -15,11 +15,11 @@
     <!-- favicon -->
     <link rel="icon" href="images/Logo/LogoForMyPortfolio-02.png">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
     <!-- Reset css -->
     <link rel="stylesheet" href="css/reset.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Rock+Salt&family=Square+Peg&display=swap" rel="stylesheet">
@@ -27,12 +27,13 @@
 </head>
 
 <body>
+    <!-- HEADER NAV -->
     <header>
-        <h1>
-            <a href="#">
-                <img class="logo" src="images/Logo/LogoForMyPortfolio-02.svg" alt="m-logo">
+        <div style="padding: 25px;">
+            <a href="#" class="logo">
+                <img src="images/Logo/LogoForMyPortfolio-02.svg" alt="m-logo">
             </a>
-        </h1>
+        </div>
         <nav>
             <ul class="main-nav">
                 <li class="header_item">
@@ -47,207 +48,80 @@
             </ul>
         </nav>
     </header>
-    <div class="inner">
-        <section class="section-container flex flex-around">
-            <img class="KV-mainVisual" src="images/KV/Portfolio_KV.png" alt="KV-mainVisual">
-            <p class="KV-introduction">Hi, there<br>I'm Mizuki Takiguchi<br>Growing Graphic / Web Designer</p>
-        </section>
-        <section class="scroll-container">
-            <div class="border1"></div>
-            <h3 class="scroll">scroll</h3>
-            <div class="border2"></div>
-        </section>
-        <section id="about" class="section-container">
-            <h2 class="contents-title">ABOUT</h2>
-            <div class="aboutContents">
-                <article class="aboutArticle">2014年に4年制大学を卒業後、4年間専門商社に勤務。
-                    仕事で英語を勉強し始めたことをきっかけに、海外留学を決意し、同社を退職。
-                    その後は2年間、海外に滞在。（1年目はニュージランドにて語学留学、2年目はオーストラリアにて就労経験を積む） 
-                    2020年に帰国後、3年弱ほど国内のIT系企業で海外折衝の業務を担当。
-                    在職中に都内のデザイン学校にて DTP/グラフィックデザインを学び、デザインの仕事をしたいと考え始め、同社を退職。
-                    現在はデザイン系の会社で バックオフィス系の仕事をしながら就職活動中。</article>
-                <img class="aboutPic" src="images/ABOUT/AboutPic_Hexagon ver.2.png">
-            </div>
-        </section>
-        <section id="works" class="section-container">
-            <h2 class="contents-title">WORKS</h2>
-            <div class="works-container">
-                <div class="flex flex-center flex-c">
-                    <p class="works-title colour-alt-1">Graphic Design</p>
-                    <a class="fade" href="/graphic-design.html">
-                        <div class="works-image-container">
-                            <img class="worksPic" src="images/WORKS/WORKS_icons_Graphic Design.png">
-                            <img class="workPic-back" src="images/WORKS/WORKS_icons_Graphic Design Shade.png">
-                        </div>
-                    </a>
-                </div>
-                <div class="flex flex-center flex-c">
-                    <p class="works-title colour-alt-2">Illustrations</p>
-                    <a class="fade" href="/illustration.html">
-                        <div class="works-image-container">
-                            <img class="worksPic" src="images/WORKS/WORKS_icons_Illustration.png">
-                            <img class="workPic-back" src="images/WORKS/WORKS_icons_Illustration shade.png">
-                        </div>
-                    </a>
-                </div>
-                <section id="contact" class="section-container">
-                    <h2 class="contents-title">CONTACT</h2>
-                    <div class="contact-container">
-                        <img class="Inquiry" src="images/CONTACT/Portfolio_inquiry.png">
-                        <div class="contactContents">
-                            <div class="form-name form">
-                                <label for=”name”>Name</label>
-                                <input type=”text” id=”company” name=”name” placeholder="山田 五郎">
-                            </div>
-                            <div class="form-mailAddress form">
-                                <label for=”mail”>E-mail</label>
-                                <input type=”mail” id=”mail” name=”name” placeholder="goro.yamada@gmail.com">
-                            </div>
-                            <div class="form-commnet">
-                                <label class="comment-font" for="comment">お問い合わせ内容</label><br >
-                                <textarea class="comment-input" id="comment" placeholder="お問い合わせ内容を入力して下さい"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-button">
-                        <a href="" class="shadow_btn01"><span>送信する</span></a>
-                    </div>
-                </section>
-            </div>
-        </section>
-    </div>
 
-    <!-- <main>
-        <div class="banner">
-            <p class="banner_text">Ys Beauty</p>
-            <p class="banner_text2">肌ケア ALL in 1限定セット</p>
+    <!-- BANNER -->
+    <section class="section-container flex flex-around">
+        <img class="KV-mainVisual" src="images/KV/Portfolio_KV.png" alt="KV-mainVisual">
+        <p class="KV-introduction">Hi, there<br>I'm Mizuki Takiguchi<br>Growing Graphic / Web Designer</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section-container">
+        <h2>ABOUT</h2>
+        <div class="aboutContents">
+            <article class="aboutArticle">2014年に4年制大学を卒業後、4年間専門商社に勤務。
+                仕事で英語を勉強し始めたことをきっかけに、海外留学を決意し、同社を退職。
+                その後は2年間、海外に滞在。（1年目はニュージランドにて語学留学、2年目はオーストラリアにて就労経験を積む） 
+                2020年に帰国後、3年弱ほど国内のIT系企業で海外折衝の業務を担当。
+                在職中に都内のデザイン学校にて DTP/グラフィックデザインを学び、デザインの仕事をしたいと考え始め、同社を退職。
+                現在はデザイン系の会社で バックオフィス系の仕事をしながら就職活動中。</article>
+            <img class="aboutPic" src="images/ABOUT/AboutPic_Hexagon ver.2.png">
         </div>
-        <section class="gray point">
-            <div class="section_inner">
-                <h2 class="threepoints">３つのポイント</h2>
-                <ul class="ball_container">
-                    <li class="circle">
-                        もちもち
-                    </li>
-                    <li class="circle">
-                        すべすべ
-                    </li>
-                    <li class="circle">
-                        さらさら
-                    </li>
-                </ul>
-                <ul>
-                    <li class="threepoints_container">
-                        <p class="threepoints_label">もちもち</p>
-                        <img class="threepoints_girl" src="image/point1.png" alt="point1">
-                        <article class="threepoint_article">
-                            <h3 class="title">濃厚クリームで赤ちゃんみたいなもっちり肌に</h3>
-                            <p class="description">Ys Beautyセットのふわふわ濃密泡がお肌に吸着し、もっちりとした赤ちゃん肌に早変わり。
-                            気になる毛穴やシミもいつもの洗顔を変えるだけでエイジングケアできます！</p>
-                        </article>
-                    </li>
-                    <li class="threepoints_container">
-                        <p class="threepoints_label">すべすべ</p>
-                        <img class="threepoints_girl" src="image/point2.png" alt="point2">
-                        <article class="threepoint_article">
-                            <h3 class="title">保湿成分たっぷりで乾燥に負けないすべすべ肌！</h3>
-                            <p class="description">5種類のヒアルロン酸を配合することで潤いを持続し、
-                            スッキリとした洗い上がりで日中もお肌を乾燥から守ります。</p>
-                        </article>
-                    </li>
-                    <li class="threepoints_container">
-                        <p class="threepoints_label">さらさら</p>
-                        <img class="threepoints_girl" src="image/point3.png" alt="point3">
-                        <article class="threepoint_article">
-                            <h3 class="title">幸せな触り心地でダメージレスな肌に！</h3>
-                            <p class="description3">Ys Beautyセットの美容液を使うことで、しっかり洗浄した後に
-                            肌をキュッと引き締めることができます。カミソリに負けないさらさらとした触り心地の肌に早変わり！</p>
-                        </article>
-                    </li>
-                </ul>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works" class="section-container">
+        <h2>WORKS</h2>
+        <div class="works-container">
+            <div class="flex flex-center flex-c">
+                <p class="works-title colour-alt-1">Graphic Design</p>
+                <a class="fade" href="/graphic-design.html">
+                    <div class="works-image-container">
+                        <img class="worksPic" src="images/WORKS/WORKS_icons_Graphic Design.png">
+                        <img class="workPic-back" src="images/WORKS/WORKS_icons_Graphic Design Shade.png">
+                    </div>
+                </a>
             </div>
-        </section>
-        <section>
-            <div class="section_inner">
-                <h2 class="product_blogs">紹介記事</h2>
-                <div class="blog_list">
-                    <div class="blog_container">
-                        <img class="blog_girl" src="image/blog1.png" alt="blog1">
-                        <article class="blog_details">
-                            <h3 class="title">ホイップクリームみたな泡を作るコツと上手な洗顔方法</h3>
-                            <p class="description">洗顔は毎日するものですよね。毎日するからこそ、質の良いものにしたい！
-                            そう誰もが思うはず。そこで今回は、簡単にできるホイップクリー泡の作り方とコツを紹介していき…</p>
-                        </article>  
+            <div class="flex flex-center flex-c">
+                <p class="works-title colour-alt-2">Illustrations</p>
+                <a class="fade" href="/illustration.html">
+                    <div class="works-image-container">
+                        <img class="worksPic" src="images/WORKS/WORKS_icons_Illustration.png">
+                        <img class="workPic-back" src="images/WORKS/WORKS_icons_Illustration shade.png">
                     </div>
-                    <div class="blog_container">
-                        <img class="blog_girl" src="image/blog2.png" alt="blog2">
-                        <article class="blog_details">
-                            <h3 class="title">申し込みの方法や定期利用の設定を簡単にご紹介！</h3>
-                            <p class="description">Ys Beautyを使ってみたいけど、どうやって申し込んだらいいか分からない…。
-                            毎月届くように設定したいけどどこからできるの？？など、Ys Beauty商品を賢く利用するための…
-                            </p>
-                        </article>  
-                    </div>
-                    <div class="blog_container">
-                        <img class="blog_girl" src="image/blog3.png" alt="blog3">
-                        <article class="blog_details">
-                            <h3 class="title">カミソリ負けして肌にダメージが•••そんな時に必要な対応方法3選！</h3>
-                            <p class="description">ムダ毛の処理は大事だけど、肌を傷つけるのは避けたい！そう思っている方は多いはず！
-                            そこで、今回はカミソリを使っても肌にダメージが残らない対応方法を３つまとめて紹…
-                            </p>
-                        </article>  
-                    </div>
-                </div> 
-            </div>           
-        </section>
-        <section class="gray product">
-            <div class="section_inner">
-                <h2 class="product_ttl">商品詳細</h2>
-                <div class="product_display">
-                    <figure class="image_grid">
-                        <img class="content1" src="image/content_1.png" alt="content1">
-                        <img class="content2" src="image/content_2.png" alt="content2">
-                        <img class="content3" src="image/content_3.png" alt="content3">
-                    </figure>
-                    <div class="product_details">
-                        <h3 class="skincare_allinone">肌ケア　ALL in 1 限定セット</h3>
-                        <h3 class="price">6,980円（税込）</h3>
-                        <p>【内容物】</p>
-                        <ul class="product_list">
-                            <li>フェイス＆ボディクリーム</li>
-                            <li>フェイス＆ボディミルク</li>
-                            <li>もちり　化粧水</li>
-                            <li>するり　乳液</li>
-                            <li>さらり　美容液</li>
-                        </ul>
-                        <a href="#" class="btn_inquiry">購入はこちら</a>
-                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-container">
+        <h2>CONTACT</h2>
+        <div class="contact-container">
+            <div class="contact-photo-container">
+                <img class="contact-photo" src="images/CONTACT/Portfolio_inquiry.png">
+            </div>
+            <div class="contact-form">
+                <div class="contact-input-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="company" name="name" placeholder="山田 五郎">
+                </div>
+                <div class="contact-input-field">
+                    <label for="mail">E-mail</label>
+                    <input type="mail" id="mail" name="name" placeholder="goro.yamada@gmail.com">
+                </div>
+                <div class="contact-input-field">
+                    <label class="comment-font" for="comment">お問い合わせ内容</label>
+                    <textarea class="comment-input" id="comment" placeholder="お問い合わせ内容を入力して下さい"></textarea>
+                </div>
+                <div>
+                    <button class="contact-submit-btn center" type="submit">送信する</button>
                 </div>
             </div>
-        </section>
-        <section>
-            <div class="section_inner">
-              <div clas="contact_item">
-                <h2 class="inquiry">お問い合わせ</h2>
-                <div class="Form">
-                    <div class="Form-Item">
-                      <p class="Form-Item-Label">お名前<span class="Form-Item-Label-Required">必須</span></p>
-                      <input type="text" class="Form-Item-Input" placeholder="山田　太郎">
-                    </div>
-                    <div class="Form-Item">
-                      <p class="Form-Item-Label">メールアドレス<span class="Form-Item-Label-Required">必須</span></p>
-                      <input type="email" class="Form-Item-Input" placeholder="◯◯@example.com">
-                    </div>
-                    <div class="Form-Item">
-                      <p class="Form-Item-Label">お問い合わせ内容</p>
-                      <textarea class="Form-Item-Textarea"></textarea>
-                    </div>
-                    <input type="submit" class="Form-Btn" value="送信する">
-                  </div>
-              </div>  
-            </div>
-        </section>
-    </main> -->
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
     </footer>
 </body>
