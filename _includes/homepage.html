@@ -1,0 +1,73 @@
+<!-- BANNER -->
+<section class="section-container">
+    <div class="banner-container">
+        <img class="KV-mainVisual" src="{{ 'assets/images/KV/Portfolio_KV.png' | absolute_url }}" alt="KV-mainVisual">
+        <p class="KV-introduction">Hi, there<br>I'm Mizuki Takiguchi<br>Growing Graphic / Web Designer</p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section-container">
+    <h2>ABOUT</h2>
+    <div class="aboutContents">
+        <article class="aboutArticle">2014年に4年制大学を卒業後、4年間専門商社に勤務。
+            仕事で英語を勉強し始めたことをきっかけに、海外留学を決意し、同社を退職。
+            その後は2年間、海外に滞在。（1年目はニュージランドにて語学留学、2年目はオーストラリアにて就労経験を積む） 
+            2020年に帰国後、3年弱ほど国内のIT系企業で海外折衝の業務を担当。
+            在職中に都内のデザイン学校にて DTP/グラフィックデザインを学び、デザインの仕事をしたいと考え始め、同社を退職。
+            現在はデザイン系の会社で バックオフィス系の仕事をしながら就職活動中。</article>
+        <img class="aboutPic" src="{{ 'assets/images/ABOUT/AboutPic_Hexagon ver.2.png' | absolute_url }}">
+    </div>
+</section>
+
+<!-- WORKS -->
+<section id="works" class="section-container">
+    <h2>WORKS</h2>
+    <div class="works-container">
+        <div class="flex flex-center flex-c">
+            <p class="works-title colour-alt-1">Graphic Design</p>
+            <a class="fade" href="{{ 'graphic-design/' | absolute_url }}">
+                <div class="works-image-container">
+                    <img class="worksPic" src="{{ 'assets/images/WORKS/WORKS_icons_Graphic Design.png' | absolute_url }}">
+                    <img class="workPic-back" src="{{ 'assets/images/WORKS/WORKS_icons_Graphic Design Shade.png' | absolute_url }}">
+                </div>
+            </a>
+        </div>
+        <div class="flex flex-center flex-c">
+            <p class="works-title colour-alt-2">Illustrations</p>
+            <a class="fade" href="{{ 'illustrations/' | absolute_url }}">
+                <div class="works-image-container">
+                    <img class="worksPic" src="{{ 'assets/images/WORKS/WORKS_icons_Illustration.png' | absolute_url }}">
+                    <img class="workPic-back" src="{{ 'assets/images/WORKS/WORKS_icons_Illustration shade.png' | absolute_url }}">
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-container">
+    <h2>CONTACT</h2>
+    <div class="contact-container">
+        <div class="contact-photo-container">
+            <img class="contact-photo" src="{{ 'assets/images/CONTACT/Portfolio_inquiry.png' | absolute_url }}">
+        </div>
+        <div class="contact-form">
+            <div class="contact-input-field">
+                <label for="name">Name</label>
+                <input type="text" id="company" name="name" placeholder="山田 五郎">
+            </div>
+            <div class="contact-input-field">
+                <label for="mail">E-mail</label>
+                <input type="mail" id="mail" name="name" placeholder="goro.yamada@gmail.com">
+            </div>
+            <div class="contact-input-field">
+                <label class="comment-font" for="comment">お問い合わせ内容</label>
+                <textarea class="comment-input" id="comment" placeholder="お問い合わせ内容を入力して下さい"></textarea>
+            </div>
+            <div>
+                <button class="contact-submit-btn center" type="submit">送信する</button>
+            </div>
+        </div>
+    </div>
+</section>

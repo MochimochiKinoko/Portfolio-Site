@@ -1,0 +1,30 @@
+{% assign home = site.baseurl %}
+{% if page.url == "/" %}
+    {% assign home = '#' %}
+{% endif %}
+
+<!-- HEADER NAV -->
+<header>
+    <div style="padding: 25px;">
+        <a href="{{ home }}" class="logo">
+            <img src="{{ 'assets/images/Logo/LogoForMyPortfolio-02.svg' | absolute_url }}" alt="m-logo">
+        </a>
+    </div>
+    <nav>
+        <ul class="main-nav">
+            {% if home == '#' %}
+            <li>
+                <a onclick="scrolltoSection('about')">ABOUT</a>
+            </li>
+            <li>
+                 <a onclick="scrolltoSection('works')">WORKS</a>
+            </li>
+            <li>
+                <a onclick="scrolltoSection('contact')">CONTACT</a>
+            </li>
+            {% endif %}
+        </ul>
+    </nav>
+</header>
+
+<script src="{{ 'assets/js/header.js' | absolute_url }}"></script>
