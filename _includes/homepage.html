@@ -9,14 +9,15 @@
 <!-- ABOUT -->
 <section id="about" class="section-container">
     <h2>ABOUT</h2>
-    <div class="aboutContents">
-        <article class="aboutArticle">2014年に4年制大学を卒業後、4年間専門商社に勤務。
+    <div class="about_container">
+        <article class="about_article">2014年に4年制大学を卒業後、4年間専門商社に勤務。
             仕事で英語を勉強し始めたことをきっかけに、海外留学を決意し、同社を退職。
             その後は2年間、海外に滞在。（1年目はニュージランドにて語学留学、2年目はオーストラリアにて就労経験を積む） 
             2020年に帰国後、3年弱ほど国内のIT系企業で海外折衝の業務を担当。
             在職中に都内のデザイン学校にて DTP/グラフィックデザインを学び、デザインの仕事をしたいと考え始め、同社を退職。
-            現在はデザイン系の会社で バックオフィス系の仕事をしながら就職活動中。</article>
-        <img class="aboutPic" src="{{ 'assets/images/ABOUT/AboutPic_Hexagon ver.2.png' | absolute_url }}">
+            現在はデザイン系の会社で バックオフィス系の仕事をしながら就職活動中。
+        </article>
+        <img class="about_pic" src="{{ 'assets/images/ABOUT/AboutPic_Hexagon ver.2.png' | absolute_url }}">
     </div>
 </section>
 
@@ -66,8 +67,9 @@
                 <textarea class="comment-input" id="comment" placeholder="お問い合わせ内容を入力して下さい"></textarea>
             </div>
             <div>
-                <button class="contact-submit-btn center" type="submit">送信する</button>
+                <button id="contact-btn" class="contact-submit-btn center" type="submit">送信する</button>
             </div>
         </div>
     </div>
 </section>
+<script src="{{ 'assets/js/contact.js' | absolute_url }}"></script>

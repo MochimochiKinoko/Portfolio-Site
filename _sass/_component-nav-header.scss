@@ -21,10 +21,18 @@ header {
     .main-nav {
         display: flex;
         font-size: 20px;
-        font-family:Arial, Helvetica, sans-serif ;
-        color: #969770;
         font-weight: 900;
         text-transform: uppercase;
         margin-right: 40px;
+
+        a {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #cbc781;
+            -webkit-text-stroke: #000 1px;
+        }
+
+        @media screen and (max-width: 500px) {
+            display: none;
+        }
     }
 }

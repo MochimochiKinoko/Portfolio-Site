@@ -9,12 +9,22 @@
     gap: 20px;
 }
 
-.contact-form > * {
-    margin-bottom: 30px;
-}
+.contact-form {
+    > * {
+        margin-bottom: 30px;
+    }
 
-.contact-form input {
-    width: 500px;
+    @media screen and (max-width: 600px){
+        width: 80%;
+    }
+
+    input {
+        width: 500px;
+    
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+    }
 }
 
 .contact-input-field {

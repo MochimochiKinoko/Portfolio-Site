@@ -10,8 +10,11 @@
 html {
     overflow-y: scroll;
     font-size: 100%;
-    scroll-snap-type: y proximity;
-    scroll-behavior: smooth;
+
+    @media screen and (min-width: 600px) {
+        scroll-snap-type: y proximity;
+        scroll-behavior: smooth; 
+    }
 }
 
 a {
