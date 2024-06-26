@@ -1,0 +1,16 @@
+/* ABOUT */
+.aboutContents {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.aboutPic {
+    height: 400px;
+    max-width: 50%;
+    object-fit: contain;
+}
+
+.aboutArticle {
+    max-width: 50%;
+}

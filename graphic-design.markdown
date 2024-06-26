@@ -4,3 +4,4 @@ permalink: /graphic-design/
 layout: default
 ---
 {% include graphic-design.html %}
+{% include image-modal.html %}

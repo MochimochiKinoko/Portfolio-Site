@@ -1,5 +1,14 @@
 
+// Core
 @import "base";
+
+// Components
 @import "component-nav-header";
-@import "gallery";
-@import "img-modal";
+@import "component-key-visual";
+@import "component-about";
+@import "component-works";
+@import "component-contact";
+@import "component-gallery";
+
+// Modules
+@import "image-modal";

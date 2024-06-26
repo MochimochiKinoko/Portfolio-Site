@@ -1,0 +1,80 @@
+/* CONTACT */
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    max-height: 600px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+.contact-form > * {
+    margin-bottom: 30px;
+}
+
+.contact-form input {
+    width: 500px;
+}
+
+.contact-input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family:  "Square Peg", cursive;
+    font-size: 35px;
+}
+
+.comment-font {
+    font-family: "Noto Serif JP", serif;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+.comment-input {
+    height: 150px;
+    padding: 10px;
+    resize: none;
+}
+
+.contact-form input {
+    height: 50px;
+    padding-left: 10px;
+}
+
+.contact-photo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-photo {
+    width: 400px;
+    object-fit: contain;
+}
+
+.contact-submit-btn {
+    display: block;
+    padding: 14px 28px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px #999;
+}
+
+.contact-submit-btn:hover {
+    transform: translate(0, 3px);
+    transition: all 0.3s;
+    box-shadow: 0 1px #999;
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-container {
+        flex-direction: column;
+        max-height: none;
+        align-items: center;
+    }    
+}
