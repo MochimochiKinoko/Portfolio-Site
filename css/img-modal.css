@@ -16,7 +16,7 @@
     /* Full height */
     overflow: auto;
     /* Enable scroll if needed */
-    background-color: rgb(227, 227, 227, 0.9);
+    background-color: rgba(80, 80, 80, 0.9);
     /* Fallback color */
 }
 
