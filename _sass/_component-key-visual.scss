@@ -4,17 +4,6 @@
     padding-top: 80px;
     max-width: 1600px;
     margin: auto;
-    display: flex;
-    justify-content: space-around;
-    gap: 50px;
-    align-items: center;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-
-    > * {
-        width: 50%;
-    }
     
     &-introduction {
         font-family: "Square Peg", cursive;
@@ -26,11 +15,41 @@
         padding-left: 80px;
     }
 
-    @media screen and (max-width: 1200px){
-        flex-direction: column;
+    &-desktop {
+        display: flex;
+        justify-content: space-around;
+        gap: 50px;
+        align-items: center;
+
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
 
         > * {
+            width: 50%;
+        }
+
+        
+    }
+
+    &-mobile {
+        display: none;
+        width: 100%;
+
+        img {
             width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1200px){
+        padding-top: 0;
+
+        &-mobile {
+            display: block;
+        }
+        
+        &-desktop {
+            display: none;
         }
     }
 }

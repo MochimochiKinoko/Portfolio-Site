@@ -11,16 +11,30 @@
         </a>
     </div>
     <nav>
+        <div id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul class="main-nav">
             {% if home == '#' %}
             <li>
-                <a onclick="scrolltoSection('about')">ABOUT</a>
+                <a onclick="scrolltoSection('about')">
+                    ABOUT
+                    <img class="icon" src="{{ 'assets/images/about_icon.png' | absolute_url }}" alt="">
+                </a>
             </li>
             <li>
-                 <a onclick="scrolltoSection('works')">WORKS</a>
+                 <a onclick="scrolltoSection('works')">
+                    WORKS
+                    <img class="icon" src="{{ 'assets/images/works_icon.png' | absolute_url }}" alt="">
+                 </a>
             </li>
             <li>
-                <a onclick="scrolltoSection('contact')">CONTACT</a>
+                <a onclick="scrolltoSection('contact')">
+                    CONTACT
+                    <img class="icon" src="{{ 'assets/images/contact_icon.png' | absolute_url }}" alt="">
+                </a>
             </li>
             {% endif %}
         </ul>
@@ -28,3 +42,4 @@
 </header>
 
 <script src="{{ 'assets/js/header.js' | absolute_url }}"></script>
+<script src="{{ 'assets/js/nav.js' | absolute_url }}"></script>

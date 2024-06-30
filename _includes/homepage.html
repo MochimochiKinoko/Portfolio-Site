@@ -1,14 +1,19 @@
 <!-- KEY VISUAL -->
 <section class="section-container">
     <div class="key-visual">
-        <img src="{{ 'assets/images/KV/Portfolio_KV.png' | absolute_url }}" alt="key-visual">
-        <p class="key-visual-introduction">Hi, there<br>I'm Mizuki Takiguchi<br>Growing Graphic / Web Designer</p>
+        <div class="key-visual-desktop">
+            <img src="{{ 'assets/images/KV/Portfolio_KV.png' | absolute_url }}" alt="key-visual">
+            <p class="key-visual-introduction">Hi, there<br>I'm Mizuki Takiguchi<br>Growing Graphic / Web Designer</p>
+        </div>
+        <div class="key-visual-mobile">
+            <img src="{{ 'assets/images/KV/kv-mobile.png' | absolute_url }}" alt="key-visual">
+        </div>
     </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section-container">
-    <h2>ABOUT</h2>
+    <h2>ABOUT<img class="icon" src="{{ 'assets/images/about_icon.png' | absolute_url }}" alt=""></h2>
     <div class="about_container">
         <article class="about_article">2014年に4年制大学を卒業後、4年間専門商社に勤務。
             仕事で英語を勉強し始めたことをきっかけに、海外留学を決意し、同社を退職。
@@ -17,13 +22,14 @@
             在職中に都内のデザイン学校にて DTP/グラフィックデザインを学び、デザインの仕事をしたいと考え始め、同社を退職。
             現在はデザイン系の会社で バックオフィス系の仕事をしながら就職活動中。
         </article>
-        <img class="about_pic" src="{{ 'assets/images/ABOUT/AboutPic_Hexagon ver.2.png' | absolute_url }}">
+        <img class="about_pic" src="{{ 'assets/images/ABOUT/AboutPic_Hexagon.png' | absolute_url }}">
+        <img class="about_pic_mobile" src="{{ 'assets/images/ABOUT/AboutPic_mobile.png' | absolute_url }}">
     </div>
 </section>
 
 <!-- WORKS -->
 <section id="works" class="section-container">
-    <h2>WORKS</h2>
+    <h2>WORKS<img class="icon" src="{{ 'assets/images/works_icon.png' | absolute_url }}" alt=""></h2>
     <div class="works-container">
         <div class="flex flex-center flex-c">
             <p class="works-title">Graphic Design</p>
@@ -48,7 +54,7 @@
 
 <!-- CONTACT -->
 <section id="contact" class="section-container">
-    <h2>CONTACT</h2>
+    <h2>CONTACT<img class="icon" src="{{ 'assets/images/contact_icon.png' | absolute_url }}" alt=""></h2>
     <div class="contact-container">
         <div class="contact-photo-container">
             <img class="contact-photo" src="{{ 'assets/images/CONTACT/Portfolio_inquiry.png' | absolute_url }}">
