@@ -49,13 +49,26 @@ h2 {
 }
 
 .section-container {
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     padding-top: 80px;
-    justify-content: space-between;
+
+    min-height: 100vh;
     scroll-snap-align: start;
 
     @media screen and (max-width: 1200px) {
         min-height: 0;
+
+        &:not(:first-of-type) {
+            padding-top: 120px;
+        }
+    }
+
+    &.flex-start {
+        justify-content: flex-start;
     }
 }
 
@@ -94,4 +107,13 @@ h2 {
 
 .center {
     margin: 0 auto;
+}
+
+
+.desktop-only {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
 }

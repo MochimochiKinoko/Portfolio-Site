@@ -11,13 +11,13 @@
         </a>
     </div>
     <nav>
+        {% if home == '#' %}
         <div id="hamburger">
             <span></span>
             <span></span>
             <span></span>
         </div>
         <ul class="main-nav">
-            {% if home == '#' %}
             <li>
                 <a onclick="scrolltoSection('about')">
                     ABOUT
@@ -36,8 +36,8 @@
                     <img class="icon" src="{{ 'assets/images/contact_icon.png' | absolute_url }}" alt="">
                 </a>
             </li>
-            {% endif %}
         </ul>
+        {% endif %}
     </nav>
 </header>
 
