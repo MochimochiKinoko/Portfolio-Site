@@ -11,6 +11,17 @@ images.forEach((image) => {
         modal.style.display = "block";
         modalImg.src = image.src;
         captionText.innerHTML = image.alt;
+
+        // Get link
+        let link = image.getAttribute('data-link');
+        if (link) {
+            let alink = document.createElement('a');
+            alink.href = link;
+            link_text = image.getAttribute('data-link-text');
+            alink.textContent = link_text ? link_text : 'Link';
+            captionText.appendChild(document.createElement('br'));
+            captionText.appendChild(alink);
+        }
     });
 });
 
